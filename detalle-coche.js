@@ -2,13 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const carId = urlParams.get('id');
+    let carId = urlParams.get('id');
 
+    // Si no hay id, mostrar el primer modelo por defecto (Aurion Veloce)
     if (!carId) {
-        // Si no hay id, mostrar error o redirigir
-        document.getElementById('titol-cotxe').textContent = 'Cotxe no trobat';
-        document.getElementById('descripcio-cotxe').textContent = 'No s\'ha especificat un model vàlid.';
-        return;
+        carId = 'modelo-a';
     }
 
     // Datos de los coches
