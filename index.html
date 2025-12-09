@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benvingut a Aurion, la teva empresa de cotxes de luxe. Descobreix la nostra col·lecció exclusiva de vehicles d'alta gamma.">
+    <meta name="keywords" content="cotxes de luxe, vehicles premium, Aurion, col·lecció exclusiva, automòbils">
+    <meta name="author" content="Biel Gonzalez">
+    <title>Inici - Empresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Aurion",
+      "url": "index.html",
+      "logo": "img/logoEmpresa.png",
+      "description": "Empresa dedicada a la venda de cotxes de luxe i vehicles premium."
+    }
+    </script>
+</head>
+
+<body>
+    <div id="loadingOverlay" class="loading-overlay">
+        <img src="img/logoEmpresa.png" alt="Logo" class="loading-logo">
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand logo-capçalera" href="index.html">
+                <img src="img/logoEmpresa.png" alt="Logo Empresa">
+                <span class="nom-marca">AURION</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inici</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formula1.html">Formula 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="seccio-principal py-5">
+        <video class="video-fons" autoplay muted loop>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="container principal-contingut">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4 text-gold">El Llegat Aurion</h2>
+                    <p class="lead text-white mb-4">Des de 1950, hem perseguit una única obsessió: la
+                        perfecció mecànica.</p>
+                    <p class="text-white">El que va començar com un petit taller de competició s'ha
+                        convertit en un símbol global de luxe i velocitat. Cada vehicle Aurion porta l'ADN
+                        de les nostres victòries a la Fórmula 1, combinant l'artesania tradicional amb la
+                        tecnologia més avantguardista.</p>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="fs-2 fw-bold text-gold me-3">75</span>
+                            <span class="letter-spacing-2 text-white">Anys d'Història</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="fs-2 fw-bold text-gold me-3">12</span>
+                            <span class="letter-spacing-2 text-white">Campionats Mundials</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="position-relative">
+                        <div class="border border-gold p-2">
+                            <img src="img/car1.png" alt="Història Aurion" class="img-fluid img-gold-filter w-100">
+                        </div>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-gold opacity-10"
+                            style="mix-blend-mode: overlay;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carousel Section -->
+    <div class="seccio-carrusel py-5">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/car1.png" class="d-block w-100" alt="Cotxe 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/car2.png" class="d-block w-100" alt="Cotxe 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/car3.png" class="d-block w-100" alt="Cotxe 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Següent</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="peu-pagina">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Aurion</h5>
+                    <p class="text-secondary">Redefinint l'excel·lència en l'automoció. Disseny, potència i
+                        luxe sense
+                        compromisos.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Enllaços Ràpids</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inici</a></li>
+                        <li><a href="productos.html">Productes</a></li>
+                        <li><a href="formula1.html">Formula 1</a></li>
+                        <li><a href="contacto.html">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Segueix-nos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="fs-5"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="#" class="fs-5"><i class="bi bi-twitter-x"></i> X</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4 border-top border-secondary border-opacity-25">
+                <div class="col-12 text-center text-secondary">
+                    <p class="mb-0">&copy; 2025 Aurion Motors. Tots els drets reservats.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/global.js"></script>
+</body>
+
+</html>
+
