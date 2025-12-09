@@ -86,6 +86,9 @@ h6,
 .seccio-principal {
   position: relative;
   overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
 }
 
 .seccio-principal::after {
@@ -393,3 +396,4 @@ h6,
   object-position: top;
   filter: grayscale(20%) contrast(110%);
 }
+
