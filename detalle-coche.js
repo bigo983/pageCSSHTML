@@ -1,6 +1,6 @@
 // detalle-coche.js - Script para cargar detalles del coche basado en el parámetro 'id'
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const carId = urlParams.get('id');
 
@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Datos de los coches
     const carsData = {
         'modelo-a': {
-            title: 'Model A',
-            description: 'El Model A és el nostre model d\'entrada, dissenyat per oferir un equilibri perfecte entre rendiment i accessibilitat.',
-            price: '12.000€',
+            title: 'Aurion Veloce',
+            description: 'L\'Aurion Veloce és el nostre model d\'entrada, dissenyat per oferir un equilibri perfecte entre rendiment i accessibilitat. Elegància i esportivitat en estat pur.',
+            price: '39.900€',
             image: 'img/car1.png',
             specs: {
                 motor: '2.0L Turbo',
@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         'modelo-b': {
-            title: 'Model B',
-            description: 'El Model B ofereix un rendiment superior amb tecnologia avançada, ideal per als amants de la velocitat.',
-            price: '25.500€',
+            title: 'Aurion Tempest',
+            description: 'L\'Aurion Tempest ofereix un rendiment superior amb tecnologia avançada. Una força de la natura al vostre servei, ideal per als amants de la velocitat pura.',
+            price: '62.500€',
             image: 'img/car2.png',
             specs: {
                 motor: '3.0L V6 Turbo',
@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         'modelo-c': {
-            title: 'Model C',
-            description: 'El Model C és la joia de la corona, amb tecnologia de Fórmula 1 i luxe incomparable.',
-            price: '48.000€',
+            title: 'Aurion Apex',
+            description: 'L\'Aurion Apex és la joia de la corona, la cúspide de l\'excel·lència automobilística. Tecnologia de Fórmula 1, luxe incomparable i prestacions extraordinàries.',
+            price: '129.000€',
             image: 'img/car3.png',
             specs: {
                 motor: '4.0L V8 Hybrid',

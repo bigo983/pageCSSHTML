@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Benvingut a Aurion, la teva empresa de cotxes de luxe. Descobreix la nostra col·lecció exclusiva de vehicles d'alta gamma.">
+    <meta name="description"
+        content="Benvingut a Aurion, la teva empresa de cotxes de luxe. Descobreix la nostra col·lecció exclusiva de vehicles d'alta gamma.">
     <meta name="keywords" content="cotxes de luxe, vehicles premium, Aurion, col·lecció exclusiva, automòbils">
     <meta name="author" content="Biel Gonzalez">
     <title>Inici - Empresa</title>
@@ -16,10 +17,29 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Aurion",
-      "url": "index.html",
-      "logo": "img/logoEmpresa.png",
-      "description": "Empresa dedicada a la venda de cotxes de luxe i vehicles premium."
+      "name": "Aurion Motors",
+      "alternateName": "Aurion",
+      "url": "https://bigo983.github.io/pageCSSHTML/",
+      "logo": "https://bigo983.github.io/pageCSSHTML/img/logoEmpresa.png",
+      "description": "Empresa dedicada a la venda de cotxes de luxe i vehicles premium. Redefinint l'excel·lència en l'automoció.",
+      "foundingDate": "2025",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrer de la Velocitat, 42",
+        "addressLocality": "Reus",
+        "postalCode": "43201",
+        "addressCountry": "ES"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34-93-123-4567",
+        "contactType": "Atenció al client",
+        "availableLanguage": ["ca", "es", "en"]
+      },
+      "sameAs": [
+        "https://instagram.com/aurionmotors",
+        "https://twitter.com/aurionmotors"
+      ]
     }
     </script>
 </head>
@@ -30,37 +50,37 @@
     </div>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            <a class="navbar-brand logo-capçalera" href="index.html">
-                <img src="img/logoEmpresa.png" alt="Logo Empresa">
-                <span class="nom-marca">AURION</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inici</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="formula1.html">Formula 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacte</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <a class="navbar-brand logo-capçalera" href="index.html">
+                    <img src="img/logoEmpresa.png" alt="Logo Empresa">
+                    <span class="nom-marca">AURION</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inici</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="formula1.html">Formula 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacte</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <header class="seccio-principal py-5">
+    <section class="seccio-principal py-5">
         <video class="video-fons" autoplay muted loop>
             <source src="video/video.mp4" type="video/mp4">
         </video>
@@ -99,7 +119,7 @@
         </div>
     </header>
 
-    <!-- Carousel Section -->
+    <!-- Carousel</section>$2 Section -->
     <div class="seccio-carrusel py-5">
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -179,5 +199,4 @@
 </body>
 
 </html>
-
 
