@@ -196,53 +196,6 @@ h6,
   color: var(--accent-gold);
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
-
-  /* Responsive Cards & Images */
-  .card img,
-  .card .w-100 {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
-  }
-
-  @media (max-width: 991px) {
-    .row.g-4>.col-md-4 {
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-bottom: 2rem;
-    }
-
-    .card {
-      margin: 0 auto;
-      width: 90%;
-    }
-  }
-
-  @media (max-width: 600px) {
-    body {
-      padding-top: 56px;
-      font-size: 0.97rem;
-    }
-
-    .navbar {
-      padding: 0.3rem 0.5rem;
-    }
-
-    .card {
-      width: 100%;
-      padding: 1rem;
-    }
-
-    .card-title {
-      font-size: 1.1rem;
-    }
-
-    .peu-pagina {
-      padding: 2rem 0 1rem;
-      margin-top: 2rem;
-    }
-  }
 }
 
 .peu-pagina a {
@@ -253,6 +206,53 @@ h6,
 
 .peu-pagina a:hover {
   color: var(--accent-gold);
+}
+
+/* Responsive Cards & Images */
+.card img,
+.card .w-100 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .row.g-4>.col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 56px;
+    font-size: 0.97rem;
+  }
+
+  .navbar {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .peu-pagina {
+    padding: 2rem 0 1rem;
+    margin-top: 2rem;
+  }
 }
 
 /* F1 Gold Edition Theme */
